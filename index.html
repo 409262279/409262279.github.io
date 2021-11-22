@@ -2,8 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>盧昀's personal page，GitHub</title>
-  </head>
+    <title> personal page</title>
+  
+  
+  <script>
+      $(document).ready(function(){
+         $("#div2").hide();
+         $("#btn1").click(function(){
+            $("#div2").toggle(1500);  
+      });        
+  });
+</script>
+</head>
+  
   <style>
   .smaller-image 
     {
@@ -24,7 +35,11 @@
     <h5 style="color: green;font-size: 20px;background-color: orange;">.   玩樂器 </h5>
     <h6 style="color: green;font-size: 20px;background-color: orange;">.   旅遊</h6>
     <h7 style="color: green;font-size: 20px;">以後想養黃金獵犬</h7>
-    <img class="smaller-image thin-red-border" src="https://github.com/409262279/409262279.github.io/raw/main/200522-23339-01-16Rc9.jpg">
- 
+    
+    <div>
+      <button id= "btn1">dog photo</button>
+        <div id="div2"style="display: none;">
+        <img class="smaller-image thin-red-border" src="https://github.com/409262279/409262279.github.io/raw/main/200522-23339-01-16Rc9.jpg">
+      </div>
   </body>
 </html>
